@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Author -->
+    <meta name="author" content="description" />
+    <meta name="RS11555" content="Sya ganteng" />
+    <!-- viewport -->
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport" />
+    <!-- keywords pencarian -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <!-- nama situs -->
+    <meta property="og:site_name" content="Web 2022" />
+    <!-- title meta -->
+    <meta property="og:title" content="Web untuk kamu" />
+    <!-- image -->
+    <meta property="og:image" itemprop="image" content="https://c.tenor.com/VWV9EQqTQEEAAAAj/hasher-happy-sticker.gif" />
+    <!-- type website -->
+    <meta property="og:type" content="Untuk kamu" />
+    <!-- waktu update -->
+    <meta property="og:updated_time" content="05.07" />
+    <!-- description -->
+    <meta property="og:description" content="Hi kalian para cewe mau gak jadi calon istriku nanti,Jadi gini kalo kita pacaran sekarang pasti saya gak mau,kalo kita pacaran pas udah nikah baru saya mau XD." />
+    <meta name="description" content="Hi kalian para cewe mau gak jadi calon istriku nanti,Jadi gini kalo kita pacaran sekarang pasti saya gak mau,kalo kita pacaran pas udah nikah baru saya mau XD." />
+    <meta name="description" property="Hi kalian para cewe mau gak jadi calon istriku nanti,Jadi gini kalo kita pacaran sekarang pasti saya gak mau,kalo kita pacaran pas udah nikah baru saya mau XD. og:description" />
+    <meta name="twitter:description" content="Hi kalian para cewe mau gak jadi calon istriku nanti,Jadi gini kalo kita pacaran sekarang pasti saya gak mau,kalo kita pacaran pas udah nikah baru saya mau XD." />
+    <meta name="whatsapp:description" content="Hi kalian para cewe mau gak jadi calon istriku nanti,Jadi gini kalo kita pacaran sekarang pasti saya gak mau,kalo kita pacaran pas udah nikah baru saya mau XD." />
+    <!-- [ title ] -->
+    <title>Buat kamu</title>
+    <!-- [ favicon ] -->
+    <link rel="icon" href="https://c.tenor.com/VWV9EQqTQEEAAAAj/hasher-happy-sticker.gif" />
+    <!-- [ bintang berjatuhan ] -->
+    <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/green-bintang-jatuh.js" type="text/javascript"></script>
+    <!-- [ salju berterbangan ] -->
+    <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+    <!-- [ salju berjatuhan ] -->
+    <!-- <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju-2.js" type="text/javascript"></script> -->
+    <style type="text/css" media="all">
+      /* [ font ] */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+      /* [ reset css ] */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        color: var(--font-color-black);
+      }
+      /* [ variable css ] */
+      :root {
+        /* [ fon size ] */
+        --font-size-min: 0.8em;
+        --font-size-default: 1em;
+        --font-size-header1: 1.6em;
+        --font-size-header2: 1.5em;
+        --font-size-header3: 1.4em;
+        --font-size-header4: 1.3em;
+        --font-size-header5: 1.2em;
+        --font-size-header6: 1.1em;
+
+        /* [ font color ] */
+        --font-color-white: #ffffff;
+        --font-color-black: #000000;
+        /* [ background color ] */
+        --body-color-white: #ffffff;
+        --body-color-black: #000000;
+        --body-color-black-transparent: rgba(000, 000, 000, 0.8);
+        --body-color-lime: lime;
+        /* [ font ] */
+        --font-text-poppins: "Poppins", sans-serif;
+        /* [ index ] */
+        --index-popup: 9999;
+
+        /* [ box shadow ] */
+        --box-shadow-container: 0 0 10px #ccc;
+        /* [ box sizing ] */
+        --box-sizing-box: border-box;
+      }
+      /* [ ubah warna block text ] */
+      ::selection {
+        background: var(--body-color-lime);
+        color: var(--font-color-black);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: var(--font-text-poppins);
+        background: url("https://d.top4top.io/p_2410zboqw0.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      /* [ popup pertana ] */
+      .__popup_background_transparent {
+        position: fixed;
+        background-color: var(--body-color-black-transparent);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: var(--index-popup);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+      .__popup_background_transparent .__popup {
+        width: 400px;
+        background-color: var(--body-color-white);
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: fixed;
+        padding: 10px;
+        animation: __animate_popup_open 0.8s ease forwards alternate;
+        box-sizing: var(--box-sizing-box);
+      }
+      @media screen and (max-width: 576px) {
+        .__popup_background_transparent .__popup {
+          width: 350px;
+        }
+      }
+      .__popup_background_transparent .__popup p {
+        font-size: var(--font-size-min);
+        margin: 5px;
+      }
+      .__popup_background_transparent .__popup a {
+        background: var(--body-color-lime);
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: var(--font-size-min);
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      .__popup_background_transparent .__popup img {
+        width: 200px;
+      }
+      @keyframes __animate_popup_open {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes __animate_popup_close {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+          z-index: -5;
+        }
+      }
+      .__container {
+        width: 400px;
+        border-radius: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        box-shadow: var(--box-shadow-container);
+        transform: translate(-50%, -50%);
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        background-color: var(--body-color-white);
+        box-sizing: var(--box-sizing-box);
+      }
+      @media screen and (max-width: 576px) {
+        .__container {
+          width: 350px;
+        }
+      }
+      .__container .__body_container h2 {
+        font-size: var(--font-size-header4);
+      }
+      .__container .__body_container p {
+        font-size: var(--font-size-min);
+        margin: 5px;
+      }
+      .__container .__body_container a {
+        background: var(--body-color-lime);
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: var(--font-size-min);
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      .__container .__head_container img {
+        width: 200px;
+      }
+
+      .__nolak_background_transparent {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--body-color-black-transparent);
+        display: none;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+      .__nolak_background_transparent .__nolak {
+        width: 400px;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        background-color: var(--body-color-white);
+        box-sizing: var(--box-sizing-box);
+      }
+      @media screen and (max-width: 576px) {
+        .__nolak_background_transparent .__nolak {
+          width: 350px;
+        }
+      }
+      .__nolak_background_transparent .__nolak img {
+        width: 200px;
+      }
+      .__nolak_background_transparent .__nolak p {
+        font-size: var(--font-size-min);
+        margin: 5px;
+      }
+      .__nolak_background_transparent .__nolak h2 {
+        font-size: var(--font-size-header4);
+      }
+      .__nolak_background_transparent .__nolak .__head_nolak {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+      }
+      .__nolak_background_transparent .__nolak .__head_nolak a {
+        background: var(--body-color-lime);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: var(--font-size-min);
+        margin-top: 5px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+      }
+      .__nolak_background_transparent .__nolak .__body_nolak a {
+        background: var(--body-color-lime);
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: var(--font-size-min);
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      @keyframes __animate_nolak_open {
+        from {
+          opacity: 0;
+          top: -500px;
+        }
+        to {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      @keyframes __animate_nolak_close {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          top: -500px;
+        }
+        100% {
+          opacity: 0;
+          z-index: -10;
+        }
+      }
+
+      .__mau_background_transparent {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--body-color-black-transparent);
+        display: none;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+      .__mau_background_transparent .__mau {
+        width: 400px;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        background-color: var(--body-color-white);
+        box-sizing: var(--box-sizing-box);
+      }
+      @media screen and (max-width: 576px) {
+        .__mau_background_transparent .__mau {
+          width: 350px;
+        }
+      }
+      .__mau_background_transparent .__mau img {
+        width: 200px;
+      }
+      .__mau_background_transparent .__mau p {
+        font-size: var(--font-size-min);
+        margin: 5px;
+      }
+      .__mau_background_transparent .__mau h2 {
+        font-size: var(--font-size-header4);
+      }
+      .__mau_background_transparent .__mau .__head_mau {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+      }
+      .__mau_background_transparent .__mau .__head_mau a {
+        background: var(--body-color-lime);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: var(--font-size-min);
+        margin-top: 5px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+      }
+      .__mau_background_transparent .__mau .__body_mau a {
+        background: var(--body-color-lime);
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: var(--font-size-min);
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      @keyframes __animate_mau_open {
+        from {
+          opacity: 0;
+          top: -500px;
+        }
+        to {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      @keyframes __animate_mau_close {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          top: -500px;
+        }
+        100% {
+          opacity: 0;
+          z-index: -5;
+        }
+      }
+    </style>
+
+    <script src="https://kit.fontawesome.com/cc9450bd42.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="__popup_background_transparent" id="__popup_background_transparent">
+      <div class="__popup">
+        <div class="__head_popup">
+          <img src="https://c.tenor.com/ooi51RU2NloAAAAj/wink-cute.gif" alt="gif" />
+        </div>
+        <div class="__body_popup">
+          <p>Baca dengan teliti agar tidak ada kesalah pahaman di antara kita XD.</p>
+          <a href="#" onclick="__popup_background_transparent_close();"><i class="fa fa-music"></i> Putar musik -> close</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="__container">
+      <div class="__head_container">
+        <img src="https://c.tenor.com/VWV9EQqTQEEAAAAj/hasher-happy-sticker.gif" alt="gif" />
+      </div>
+      <div class="__body_container">
+        <h2>Mau gak</h2>
+        <p>Hi kalian para cewe mau gak jadi calon istriku nanti,Jadi gini kalo kita pacaran sekarang pasti saya gak mau,kalo kita pacaran pas udah nikah baru saya mau XD.</p>
+        <a href="#" onclick="__mau_background_transparent_open();">Saya mau</a>
+        <a href="#" onclick="__nolak_background_transparent_open();">Gk mau</a>
+      </div>
+    </div>
+
+    <div class="__nolak_background_transparent" id="__nolak_background_transparent">
+      <div class="__nolak">
+        <div class="__head_nolak">
+          <h2>Jangan nyesel</h2>
+          <div class="__head_btn">
+            <a href="#" onclick="__nolak_background_transparent_close();">X</a>
+          </div>
+        </div>
+        <div class="__img_nolak">
+          <img src="https://c.tenor.com/yhMZIW9G7BkAAAAi/peachcat-cat.gif" alt="gif"
+          />
+        </div>
+        <div class="__body_nolak">
+          <p>Kenapa gak mau,pasti ada alasan lain kan,yaudah deh kalo gak mau kunjungi aja blog saya di bawah ini.
+          </p>
+          <a href="https://the-tlaw.blogspot.com/?m=1" target="_blank"><i class="fa fa-blog"></i> My Blog</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="__mau_background_transparent" id="__mau_background_transparent">
+      <div class="__mau">
+        <div class="__head_mau">
+          <h2>Kasih kabar yhh</h2>
+          <div class="__btn_mau">
+            <a href="#" onclick="__mau_background_transparent_close();">X</a>
+          </div>
+        </div>
+        <div class="__img_mau">
+          <img src="https://c.tenor.com/yLPF2ku83OoAAAAj/peach-emm.gif" alt="gif" />
+        </div>
+        <div class="__body_mau">
+          <p>Kasih kabar saya di wa/whatsapp,klick tombol yang ada di bawah ini.</p>
+          <a href="https://api.whatsapp.com/send?phone=6285794986495&text=Saya%20mau%20jadi%20calon%20istri%20kamu%20kk%20XD!"><i class="fa fa-whatsapp"></i> Whatsapp</a>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+      //ngambil id
+      var __popup_background_transparent = document.getElementById(
+        "__popup_background_transparent"
+      );
+      var __nolak_background_transparent = document.getElementById(
+        "__nolak_background_transparent"
+      );
+      var __mau_background_transparent = document.getElementById(
+        "__mau_background_transparent"
+      );
+      var __audio = new Audio("https://j.top4top.io/m_2398rp9421.mp3");
+
+      //function / grup
+      function __popup_background_transparent_close() {
+        __popup_background_transparent.style.animation =
+          "__animate_popup_close 0.8s ease forwards alternate";
+        __audio.play();
+      }
+      function __nolak_background_transparent_open() {
+        __nolak_background_transparent.style.display = "block";
+        __nolak_background_transparent.style.animation =
+          "__animate_nolak_open 0.8s ease forwards alternate";
+      }
+      function __nolak_background_transparent_close() {
+        //__nolak_background_transparent.style.display = 'none';
+        __nolak_background_transparent.style.animation =
+          "__animate_nolak_close 0.8s ease forwards alternate";
+      }
+      function __mau_background_transparent_open() {
+        __mau_background_transparent.style.animation =
+          "__animate_mau_open 0.8s ease forwards alternate";
+        __mau_background_transparent.style.display = "block";
+      }
+      function __mau_background_transparent_close() {
+        __mau_background_transparent.style.animation =
+          "__animate_mau_close 0.8s ease forwards alternate";
+      }
+    </script>
+  </body>
+</html>
+
